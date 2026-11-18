@@ -2,12 +2,15 @@ import java.util.Scanner;
 public class sis 
 {
 	public static void main(String[] args) 
+
 	{
 		mainMenu();
 	
 	}
 
 	public static void mainMenu() {
+	}
+	private static void mainMenu() {
 		Scanner userIntInput = new Scanner (System.in);
 		System.out.println("What would you like to do?");
 		System.out.println("1) add or delete a student");
@@ -32,11 +35,7 @@ public class sis
 			System.out.println("Please select a valid number.");
 			mainMenu();
 			}
-			
-		
-		
 	}
-
 	private static void sortStudents() 
 		{
 		System.out.println("How would you like to sort the students?");
@@ -44,24 +43,39 @@ public class sis
 		System.out.println("2)Sort by GPA");
 		System.out.println("3)Sort by period ");
 
-
-		
 		}
 
-	
 	private static void changeGradeorSchedule() 
 		{
-		System.out.println("What do you want to change?");
-		System.out.println("1) Student grade");
-		System.out.println("2) Student schedule");
 		
+		Scanner userIntInput = new Scanner(System.in);
+		Scanner userStringInput = new Scanner(System.in);
+		boolean isChanging = true;
+		while (isChanging)
+			{
+			System.out.println("What do you want to change?");
+			System.out.println("1) Student grade");
+			System.out.println("2) Student schedule");
+			int change = userIntInput.nextInt();
+			if(change == 1)
+				{
+					
+				}
+			else if(change == 2)
+				{
+					
+				}
+			else
+				{
+					System.out.println("Invalid");
+					isChanging = true;
+				}
+			}
 		}
-
 	private static void addOrDelete() 
 		{
 		System.out.println("What do you need to do?");
 		System.out.println("1) Add student");
 		System.out.println("2) Delete student");
-		
 		}
 }
