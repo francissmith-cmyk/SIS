@@ -5,6 +5,10 @@ public class sis
 
 	{
 		mainMenu();
+	
+	}
+
+	public static void mainMenu() {
 	}
 	private static void mainMenu() {
 		Scanner userIntInput = new Scanner (System.in);
@@ -19,7 +23,8 @@ public class sis
 			}
 		else if(decision == 2)
 			{
-			changeGradeorSchedule();
+			
+			ChangeGradeOrSchedule.ChangeGradeOrSchedule();
 			}
 		else if(decision == 3)
 			{
